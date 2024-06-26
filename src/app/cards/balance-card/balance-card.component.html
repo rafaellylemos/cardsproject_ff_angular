@@ -1,0 +1,33 @@
+<div class="structure">
+    <div class="header primary">
+        <div class="header__title">
+            <img
+                class="header__icon"
+                src="../../../assets/icons/icon-hand.png"
+              />
+              <h1>Saldos Disponíveis</h1>
+        </div>
+        <p>R$ 100,00</p>
+    </div>
+    <div class="content">
+        <div *ngFor="let item of dadosBalance; let i = index">
+            <div class="content__item">
+                <p>{{ item.tipo }}</p>
+                <p>{{ item.valor }}</p>
+            </div>
+            <div *ngIf="i < dadosBalance.length - 1" class="content__item-line"></div>
+        </div>
+        <div class="content__item-line"></div>
+
+        <div class="content__summary">
+            <div class="content__item">
+                <p>SALDO TOTAL</p>
+                <p>R$ 1000,00</p>
+            </div>
+            <div class="content__item">
+                <p>LIVRE PARA A MOVIMENTAÇÃO</p>
+                <p>R$ 1000,00</p>
+            </div>
+        </div>
+    </div>
+</div>

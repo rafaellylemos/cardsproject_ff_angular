@@ -1,0 +1,27 @@
+<div class="structure">
+    <div class="header primary">
+        <div class="header__title">
+            <img
+                class="header__icon"
+                src="../../../assets/icons/icon-credit-card.png"
+              />
+              <h1>Cartão de Crédito</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__item">
+            <p>
+              1234567891011 <br />
+              FELIPE DA SILVA FREITAS
+            </p>
+            <p>MASTERCARD</p>
+          </div>
+        <div *ngFor="let item of dadosCredit; let i = index">
+            <div class="content__item">
+                <p>{{ item.tipo }}</p>
+                <p>{{ item.valor }}</p>
+            </div>
+            <div *ngIf="i === 0 || i === 2" class="content__item-line"></div>
+        </div>
+    </div>
+</div>
