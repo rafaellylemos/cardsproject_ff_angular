@@ -6,26 +6,26 @@ import { Component } from '@angular/core';
   styleUrl: './credit-card.component.scss'
 })
 export class CreditCardComponent {
-  dadosCredit = [
+  dataCredit = [
     {
-      tipo: 'Limite de Compra',
-      valor: '1000,00'
+      text: 'Limite de Compra',
+      value: '1000,00'
     },
     {
-      tipo: 'Disponível',
-      valor: '1200,00'
+      text: 'Disponível',
+      value: '1200,00'
     },
     {
-      tipo: 'Limite de Saque',
-      valor: '2000,00'
+      text: 'Limite de Saque',
+      value: '2000,00'
     },
     {
-      tipo: 'Disponível',
-      valor: '1300,00'
+      text: 'Disponível',
+      value: '1300,00'
     },
     {
-      tipo: 'Limite Total Utilizado',
-      valor: '3000,00'
+      text: 'Limite Total Utilizado',
+      value: '3000,00'
     }
   ]
 

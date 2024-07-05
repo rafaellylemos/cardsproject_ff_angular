@@ -6,22 +6,22 @@ import { Component } from '@angular/core';
   styleUrl: './client-infos-card.component.scss'
 })
 export class ClientInfosCardComponent {
-  dadosClient = [
+  dataInfoClient = [
     {
-      tipo: 'Nome',
-      valor: 'Felipe da Silva Freitas'
+      text: 'Nome',
+      value: 'Felipe da Silva Freitas'
     },
     {
-      tipo: 'Idade',
-      valor: '26 anos'
+      text: 'Idade',
+      value: '26 anos'
     },
     {
-      tipo: 'Renda Mensal',
-      valor: 'R$ -1000,00'
+      text: 'Renda Mensal',
+      value: 'R$ -1000,00'
     },
     {
-      tipo: 'Nacionalidade',
-      valor: 'Brasileiro'
+      text: 'Nacionalidade',
+      value: 'Brasileiro'
     }
   ]
 }

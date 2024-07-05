@@ -1,20 +1,14 @@
 <div class="structure">
-    <div class="header secondary">
-        <div class="header__title">
-            <img
-                class="header__icon"
-                src="../../../assets/icons/icon-client.png"
-              />
-              <h1>Informações do Cliente</h1>
-        </div>
+    <div class="header bg-blue">
+        <app-card-title title="Informações do Cliente" icon="icon-client.png"/>
     </div>
     <div class="content">
-        <div *ngFor="let item of dadosClient; let i = index">
+        <div *ngFor="let item of dataInfoClient; let i = index">
             <div class="content__item">
-                <p>{{ item.tipo }}</p>
-                <p>{{ item.valor }}</p>
+                <p>{{ item.text }}</p>
+                <p>{{ item.value }}</p>
             </div>
-            <div *ngIf="i < dadosClient.length - 1" class="content__item-line"></div>
+            <div *ngIf="i < dataInfoClient.length - 1" class="content__item-line"></div>
         </div>
     </div>
 </div>

@@ -1,12 +1,6 @@
 <div class="structure">
-    <div class="header primary">
-        <div class="header__title">
-            <img
-                class="header__icon"
-                src="../../../assets/icons/icon-credit-card.png"
-              />
-              <h1>Cartão de Crédito</h1>
-        </div>
+    <div class="header">
+        <app-card-title title="Cartão de Crédito" icon="icon-credit-card.png"/>
     </div>
     <div class="content">
         <div class="content__item">
@@ -16,12 +10,12 @@
             </p>
             <p>MASTERCARD</p>
           </div>
-        <div *ngFor="let item of dadosCredit; let i = index">
+          <div *ngFor="let item of dataCredit; let i = index">
             <div class="content__item">
-                <p>{{ item.tipo }}</p>
-                <p>{{ item.valor }}</p>
+                <p>{{ item.text }}</p>
+                <p>{{ item.value }}</p>
             </div>
-            <div *ngIf="i === 0 || i === 2" class="content__item-line"></div>
-        </div>
+            <div *ngIf="i < dataCredit.length - 1" class="content__item-line"></div>
+            </div>
     </div>
 </div>

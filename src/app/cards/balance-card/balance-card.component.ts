@@ -6,28 +6,26 @@ import { Component } from '@angular/core';
   styleUrl: './balance-card.component.scss'
 })
 export class BalanceCardComponent {
-
-  dadosBalance = [
+  dataBalance = [
     {
-      tipo: 'Conta corrente',
-      valor: '2000,00'
+      text: 'Conta corrente',
+      value: '2000,00'
     },
     {
-      tipo: 'Conta corrente saldo vinculado',
-      valor: '2000,00'
+      text: 'Conta corrente saldo vinculado',
+      value: '2000,00'
     },
     {
-      tipo: 'Conta Poupança Saldo Vinculado',
-      valor: '400,00'
+      text: 'Conta Poupança Saldo Vinculado',
+      value: '400,00'
     },
     {
-      tipo: 'Investimento com Baixa Automática',
-      valor: '500,00'
+      text: 'Investimento com Baixa Automática',
+      value: '500,00'
     },
     {
-      tipo: 'Investimento sem Baixa Automática',
-      valor: '500,00'
+      text: 'Investimento sem Baixa Automática',
+      value: '500,00'
     }
   ]
-
 }

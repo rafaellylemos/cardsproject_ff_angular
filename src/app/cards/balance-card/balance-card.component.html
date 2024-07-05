@@ -1,21 +1,15 @@
 <div class="structure">
-    <div class="header primary">
-        <div class="header__title">
-            <img
-                class="header__icon"
-                src="../../../assets/icons/icon-hand.png"
-              />
-              <h1>Saldos Disponíveis</h1>
-        </div>
+    <div class="header">
+            <app-card-title title="Saldos Disponíveis" icon="icon-hand.png"/>
         <p>R$ 100,00</p>
     </div>
     <div class="content">
-        <div *ngFor="let item of dadosBalance; let i = index">
+      <div *ngFor="let item of dataBalance; let i = index">
             <div class="content__item">
-                <p>{{ item.tipo }}</p>
-                <p>{{ item.valor }}</p>
+                <p>{{ item.text }}</p>
+                <p>{{ item.value }}</p>
             </div>
-            <div *ngIf="i < dadosBalance.length - 1" class="content__item-line"></div>
+            <div *ngIf="i < dataBalance.length - 1" class="content__item-line"></div>
         </div>
         <div class="content__item-line"></div>
 
